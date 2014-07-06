@@ -11,6 +11,7 @@
 int main()
 {
     signal(SIGPIPE,SIG_IGN);
+    printf("start\n");
     struct sockaddr_in servaddr;
     memset(&servaddr,0,sizeof(servaddr));
     servaddr.sin_family = AF_INET;
